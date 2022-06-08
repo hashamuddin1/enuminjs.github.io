@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ENUM VARIABLE</title>
+</head>
+
+<body>
+    <script>
+        let enum1 = Object.freeze({
+            physics: "physics",
+            chemistry: "chemistry",
+            maths: "maths"
+        })
+
+        enum1.maths = "urdu"
+        console.log(enum1.maths) //change nhi hoga object.freeze ki wajah se
+            //agar update ka option rakhna hay tw object.freeze na rakho
+            // let enum1 = {
+            //     physics: "physics",
+            //     chemistry: "chemistry",
+            //     maths: "maths"
+            // }
+            //just ye rakho
+
+        if (enum1.physics) {
+            console.log("you are studing physics")
+        }
+
+        if (enum1.chemistry) {
+            console.log("you are studing chemistry")
+        }
+
+        if (enum1.maths) {
+            console.log("you are studing maths")
+        }
+    </script>
+</body>
+
+</html>
